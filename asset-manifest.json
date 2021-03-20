@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.207db4cf.chunk.css",
+    "main.js": "/static/js/main.7bb4e04e.chunk.js",
+    "main.js.map": "/static/js/main.7bb4e04e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a2440bee.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a2440bee.js.map",
+    "static/js/2.a8a8d463.chunk.js": "/static/js/2.a8a8d463.chunk.js",
+    "static/js/2.a8a8d463.chunk.js.map": "/static/js/2.a8a8d463.chunk.js.map",
+    "static/css/3.00373544.chunk.css": "/static/css/3.00373544.chunk.css",
+    "static/js/3.22c00cb9.chunk.js": "/static/js/3.22c00cb9.chunk.js",
+    "static/js/3.22c00cb9.chunk.js.map": "/static/js/3.22c00cb9.chunk.js.map",
+    "static/css/4.3e7d09e6.chunk.css": "/static/css/4.3e7d09e6.chunk.css",
+    "static/js/4.8c70f7a5.chunk.js": "/static/js/4.8c70f7a5.chunk.js",
+    "static/js/4.8c70f7a5.chunk.js.map": "/static/js/4.8c70f7a5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.576c12fa47f401398c196e56d7d5fb72.js": "/precache-manifest.576c12fa47f401398c196e56d7d5fb72.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/3.00373544.chunk.css.map": "/static/css/3.00373544.chunk.css.map",
+    "static/css/4.3e7d09e6.chunk.css.map": "/static/css/4.3e7d09e6.chunk.css.map",
+    "static/css/main.207db4cf.chunk.css.map": "/static/css/main.207db4cf.chunk.css.map",
+    "static/js/2.a8a8d463.chunk.js.LICENSE.txt": "/static/js/2.a8a8d463.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
+    "static/media/alineLogo.png": "/static/media/alineLogo.130a261e.png",
+    "static/media/colanInfotechLogo.png": "/static/media/colanInfotechLogo.0c169fce.png",
+    "static/media/contactMailDark.svg": "/static/media/contactMailDark.51cf7192.svg",
+    "static/media/developerActivity.svg": "/static/media/developerActivity.59389695.svg",
+    "static/media/freshworks.png": "/static/media/freshworks.4069429b.png",
+    "static/media/manOnTable.svg": "/static/media/manOnTable.52be3144.svg",
+    "static/media/skill.svg": "/static/media/skill.34409398.svg",
+    "static/media/TalkCard.css": "/static/media/talksCardBack.13780cdd.svg",
+    "static/media/vickramCollegeLogo.jpeg": "/static/media/vickramCollegeLogo.1ea1cf08.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2440bee.js",
+    "static/js/2.a8a8d463.chunk.js",
+    "static/css/main.207db4cf.chunk.css",
+    "static/js/main.7bb4e04e.chunk.js"
+  ]
+}
