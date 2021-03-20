@@ -169,13 +169,30 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
+  title: "Big Projects",
+  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  projects: [
+    {
+      image: require("./assets/images/alineFullLogo.png"),
+      projectName: "CloudEDH",
+      projectDesc: "Data visualization tool",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.aline-consulting.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -190,8 +207,20 @@ const blogSection = {
 };
 
 // Talks Sections
-
 const talkSection = {
+  title: "TALKS",
+  subtitle: emoji(
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  ),
+
+  talks: [
+    {
+      title: "Views on Vue",
+      subtitle: "Devhours at Freshworks",
+      slides_url: "https://docs.google.com/presentation/d/1k_3hMySLC7pQvJAzw5m2cxE5IZxsG7Dxcd2K7R1YnMg/edit?usp=sharing"
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
