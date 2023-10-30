@@ -25,8 +25,9 @@ const greeting = {
   subTitle: emoji(
     "A passionate software professional 🚀 having an experience of building web and mobile applications with popular javascript frameworks and react native."
   ),
-  resumeLink:
-    "https://docs.google.com/document/d/1yjaqoDTW10ABVjmIfCB779ax2oNLqbSzQ3XyQSHHVr8/edit?usp=sharing", // Set to empty to hide the button
+  displayContact: true,
+  // resumeLink:
+  //   "https://docs.google.com/document/d/1yjaqoDTW10ABVjmIfCB779ax2oNLqbSzQ3XyQSHHVr8/edit?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -34,14 +35,14 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/venkateshsundaram",
-  linkedin: "https://www.linkedin.com/in/venkatesh-sundaram/",
-  gmail: "contactvenkateshsundaram@gmail.com",
   gitlab: "https://gitlab.com/venkateshsundaram",
+  medium: "https://medium.com/@contactvenkateshsundaram",
+  stackoverflow: "https://stackoverflow.com/users/15438131/venkatesh-sundaram",
+  linkedin: "https://www.linkedin.com/in/venkatesh-sundaram/",
+  // gmail: "contactvenkateshsundaram@gmail.com",
   facebook: "https://www.facebook.com/contactvenkatesh",
   instagram: "https://www.instagram.com/venkatesh__here",
   twitter: "https://www.twitter.com/contactvenkat_s",
-  medium: "https://medium.com/@contactvenkateshsundaram",
-  stackoverflow: "https://stackoverflow.com/users/15438131/venkatesh-sundaram",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -367,10 +368,10 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Reach out to Me ✉️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91-9787742045",
+  // number: "+91-9787742045",
   email_address: "contactvenkateshsundaram@gmail.com"
 };
 
