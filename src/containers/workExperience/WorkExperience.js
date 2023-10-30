@@ -20,7 +20,7 @@ export default function WorkExperience({ loadingState, updateShowMoreExperiences
     setTimeout(() => {
       updateEnableMore(state);
       updateShowMoreExperiences(false);
-    }, 2000)
+    }, 500)
   }
 
   if (workExperiences.display) {
