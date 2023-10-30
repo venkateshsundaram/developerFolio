@@ -1,6 +1,6 @@
 @import "../../_globalColor";
 
-.main-button {
+.main-button, .default-button {
   background-color: $buttonColor;
   border: solid 1px $buttonColor;
   color: $textColorDark;
@@ -18,12 +18,27 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
 }
-.main-button:hover {
-  background-color: $darkBoxShadow2;
-  color: $buttonColor;
+
+.main-button:hover, .default-button {
+  background-color: $darkBoxShadow2 !important;
+  color: $buttonColor !important;
   transition: all 0.3s ease 0s;
   transform: translateY(-3px);
 }
+
+.default-button {
+  transition: none !important;
+  transform: unset !important;
+}
+
+.default-button:hover {
+  background-color: $buttonColor !important;
+  border: solid 1px $buttonColor !important;
+  color: $textColorDark !important;
+  transition: all 0.3s ease 0s !important;
+  transform: translateY(-3px) !important;
+}
+
 .project-button {
   display: flex;
   justify-content: center;

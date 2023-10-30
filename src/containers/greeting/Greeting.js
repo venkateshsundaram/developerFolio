@@ -39,7 +39,7 @@ export default function Greeting() {
               </p>
               <SocialMedia />
               <div className="button-greeting-div flex-center">
-                {greeting.displayContact && <Button newTab text="Contact me"  href={`mailto:${contactInfo.email_address}`} />}
+                {greeting.displayContact && <Button type="default" newTab text="Contact me" href={`mailto:${contactInfo.email_address}`} />}
                 {greeting.resumeLink && (
                   <Button
                     text="See my resume"
