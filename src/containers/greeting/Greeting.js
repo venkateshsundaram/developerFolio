@@ -39,7 +39,8 @@ export default function Greeting() {
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
-                {greeting.displayContact && <Button type="default" newTab text="Contact me" href={`mailto:${contactInfo.email_address}`} />}
+                {greeting.displayContact && <Button newTab text="Say Hello!" href={`mailto:${contactInfo.email_address}`} />}
+                {greeting.displayReachout && <Button type="default" text="About Myself" href="#reachout" />}
                 {greeting.resumeLink && (
                   <Button
                     text="See my resume"

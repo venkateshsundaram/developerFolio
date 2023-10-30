@@ -19,24 +19,34 @@
   transition: all 0.3s ease-in-out 0s;
 }
 
-.main-button:hover, .default-button {
-  background-color: $darkBoxShadow2 !important;
-  color: $buttonColor !important;
+.main-button:hover {
+  background-color: $darkBoxShadow2;
+  color: $buttonColor;
   transition: all 0.3s ease 0s;
   transform: translateY(-3px);
 }
 
 .default-button {
-  transition: none !important;
-  transform: unset !important;
+  background-color: $darkBoxShadow2;
+  color: $buttonColor;
+}
+
+.dark-mode .default-button  {
+  background-color: $darkBackground !important;
+  color: $buttonColor !important;
 }
 
 .default-button:hover {
-  background-color: $buttonColor !important;
-  border: solid 1px $buttonColor !important;
+  background-color: $buttonColor;
+  border: solid 1px $buttonColor;
+  color: $textColorDark;
+  transition: all 0.3s ease 0s;
+  transform: translateY(-3px);
+}
+
+.dark-mode .default-button:hover  {
+  background-color: $buttonColor!important;
   color: $textColorDark !important;
-  transition: all 0.3s ease 0s !important;
-  transform: translateY(-3px) !important;
 }
 
 .project-button {

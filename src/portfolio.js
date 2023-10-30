@@ -26,6 +26,7 @@ const greeting = {
     "A passionate software professional 🚀 having an experience of building web and mobile applications with popular javascript frameworks and react native."
   ),
   displayContact: true,
+  displayReachout: true,
   // resumeLink:
   //   "https://docs.google.com/document/d/1yjaqoDTW10ABVjmIfCB779ax2oNLqbSzQ3XyQSHHVr8/edit?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
