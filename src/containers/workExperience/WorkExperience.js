@@ -50,7 +50,12 @@ export default function WorkExperience({ loadingState, updateShowMoreExperiences
                   }
                   return null;
                 })}
-                {isLoading && <ExperienceCard isDark={isDark} isLoading={isLoading} />}
+                {isLoading && 
+                  <ExperienceCard 
+                    isDark={isDark}
+                    isLoading={isLoading} 
+                    loadingCount={3}
+                  />}
               </div>
               {!enableMore && (
                 <Button

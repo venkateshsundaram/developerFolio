@@ -60,7 +60,6 @@ export default function ExperienceCard({ cardInfo, isDark, isLoading, loadingCou
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>
-
         <img
           crossOrigin={"anonymous"}
           ref={imgRef}
