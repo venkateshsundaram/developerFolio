@@ -73,8 +73,8 @@
 }
 
 .project-card-footer span.project-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
+  background: $lightBackground3 !important;
+  color: $buttonColor !important;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;
