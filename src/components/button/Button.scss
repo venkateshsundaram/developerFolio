@@ -26,6 +26,10 @@
   transform: translateY(-3px);
 }
 
+.dark-mode .main-button:hover {
+  background-color: $darkBackground !important;
+}
+
 .default-button {
   background-color: $darkBoxShadow2;
   color: $buttonColor;

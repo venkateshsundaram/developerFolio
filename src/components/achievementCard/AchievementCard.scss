@@ -54,8 +54,8 @@
   justify-content: center;
 }
 .certificate-card-footer span.certificate-tag {
-  background: $lightBackground3 !important;
-  color: $buttonColor !important;
+  background: $lightBackground3;
+  color: $buttonColor;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;
@@ -70,6 +70,12 @@
   cursor: pointer;
   transition: 0.2s ease-in;
 }
+
+.dark-mode .certificate-card-footer span.certificate-tag {
+  background: $buttonColor !important;
+  color: $lightBackground3 !important;
+}
+
 span.certificate-tag:hover {
   background: $buttonHover;
 }

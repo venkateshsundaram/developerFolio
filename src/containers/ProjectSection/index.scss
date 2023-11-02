@@ -73,8 +73,8 @@
 }
 
 .project-card-footer span.project-tag {
-  background: $lightBackground3 !important;
-  color: $buttonColor !important;
+  background: $lightBackground3;
+  color: $buttonColor;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;
@@ -88,6 +88,11 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
+}
+
+.project-card-dark .project-card-footer span.project-tag {
+  background: $buttonColor !important;
+  color: $lightBackground3 !important;
 }
 
 @media (max-width: 768px) {
