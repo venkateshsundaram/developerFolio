@@ -95,7 +95,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "nextjs",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "fab fa-neos"
     },
     {
       skillName: "react-native",
@@ -108,6 +108,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "mongodb",
+      fontAwesomeClassname: "fas fa-leaf"
     },
     {
       skillName: "aws",
