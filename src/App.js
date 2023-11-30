@@ -7,7 +7,7 @@ import Main from "./containers/Main";
 function App() {
   return (
     <div>
-      <ProgressBar color="#0d64c2" height={6} />
+      <ProgressBar color="#0e6aa8" height={5} />
       <Main />
     </div>
   );
