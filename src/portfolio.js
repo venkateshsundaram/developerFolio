@@ -248,7 +248,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // hobby projects you have worked on
@@ -345,7 +345,7 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "Talks",
   subtitle: emoji(
     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
