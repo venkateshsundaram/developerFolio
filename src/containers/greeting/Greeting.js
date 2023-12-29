@@ -2,12 +2,21 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+// import landingPerson from "../../assets/lottie/landingPerson";
+import profile from "../../assets/images/profile.jpg"
+import github from "../../assets/images/github.png"
+import gitlab from "../../assets/images/gitlab.png"
+import instagram from "../../assets/images/instagram.png"
+import linkedin from "../../assets/images/linkedin.png"
+
+// import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
-import {illustration, greeting,contactInfo} from "../../portfolio";
+import {
+  // illustration, 
+  greeting,contactInfo
+} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
@@ -19,6 +28,35 @@ export default function Greeting() {
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
+          {/* <div className="greeting-image-div">
+            {illustration.animated ? (
+              <DisplayLottie animationData={landingPerson} />
+            ) : (
+              <img
+                alt="man sitting on table"
+                src={require("../../assets/images/manOnTable.svg")}
+              ></img>
+            )}
+          </div> */}
+          <div className="rounding-sec">
+                <div className="big-circle">
+                    <div className="icon-block">
+                        <img src={github} alt="" />
+                    </div>
+                    <div className="icon-block">
+                       <img src={instagram} alt="" />
+                    </div>
+                    <div className="icon-block">
+                        <img src={gitlab} alt="" />
+                    </div>
+                    <div className="icon-block">
+                        <img src={linkedin} alt="" />
+                    </div>
+                </div>
+                <div className="images">
+                    <img src={profile} alt="" className="img-w"/>
+                </div>
+            </div>
           <div className="greeting-text-div">
             <div>
               <h1
@@ -50,16 +88,6 @@ export default function Greeting() {
                 )}
               </div>
             </div>
-          </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
           </div>
         </div>
       </div>
