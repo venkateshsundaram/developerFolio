@@ -72,7 +72,7 @@ function Header() {
             </li>
           )}
           <li>
-            <a href="#reachout">Reach out to Me</a>
+            <a href="#reachout">About Me</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
