@@ -38,7 +38,7 @@ const socialMediaLinks = {
   github: "https://github.com/venkateshsundaram",
   gitlab: "https://gitlab.com/venkateshsundaram",
   medium: "https://medium.com/@contactvenkateshsundaram",
-  stackoverflow: "https://stackoverflow.com/users/15438131/venkatesh-sundaram",
+  // stackoverflow: "https://stackoverflow.com/users/15438131/venkatesh-sundaram",
   linkedin: "https://www.linkedin.com/in/venkatesh-sundaram/",
   // gmail: "contactvenkateshsundaram@gmail.com",
   facebook: "https://www.facebook.com/contactvenkatesh",

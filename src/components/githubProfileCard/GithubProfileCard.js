@@ -1,7 +1,7 @@
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {contactInfo} from "../../portfolio";
+// import {contactInfo} from "../../portfolio";
 import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
 
@@ -17,9 +17,9 @@ export default function GithubProfileCard({prof}) {
         <h1 className="prof-title">About me!</h1>
         <div className="row">
           <div className="main-content-profile">
-            <div className="blog-header">
+            {/* <div className="blog-header">
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
-            </div>
+            </div> */}
             <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
             {prof.location !== null && (
               <div className="location-div">
