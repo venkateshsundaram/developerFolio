@@ -3,7 +3,7 @@ import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 // import landingPerson from "../../assets/lottie/landingPerson";
-import profile from "../../assets/images/profile.png"
+import profile from "../../assets/images/profile1.png"
 import github from "../../assets/images/github.png"
 import gitlab from "../../assets/images/gitlab.png"
 import instagram from "../../assets/images/instagram.png"
