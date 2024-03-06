@@ -258,6 +258,19 @@ const hobbyProjects = {
   subtitle: "GREAT PROJECTS THAT I BUILD WHEN I HAVE FREE TIME",
   projects: [
     {
+      image: require("./assets/images/videotape.png"),
+      projectName: "Video tape",
+      className: "semi-center-card",
+      projectDesc: "Movies and shows preview application",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://videotape.netlify.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
       image: require("./assets/images/confabbox.svg"),
       projectName: "Confabbox",
       className: "semi-center-card",
@@ -270,19 +283,6 @@ const hobbyProjects = {
         //  you can add extra buttons here.
       ]
     },
-    {
-      image: require("./assets/images/videotape.png"),
-      projectName: "Video tape",
-      className: "semi-center-card",
-      projectDesc: "Movies and shows preview application",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://videotape.netlify.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
