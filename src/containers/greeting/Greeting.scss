@@ -130,8 +130,8 @@
 
 .rounding-sec {
   position: relative;
-  height: 400px;
-  width: 400px;
+  height: 320px;
+  width: 320px;
   margin: auto;
 }
 
@@ -145,7 +145,7 @@
 
 .images {
   margin-left: auto;
-  width: 320px;
+  width: 240px;
 }   
 .images img {
   border-radius: 50%;
@@ -267,16 +267,18 @@
   .greeting-main {
     grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .icon-block {
       width: 50px;
       height: 50px;
   }
   .rounding-sec {
-      height: 300px;
-      width: 300px;
+      height: 270px;
+      width: 270px;
   }
   .images {
-      width: 230px;
+      width: 200px;
   }
 }

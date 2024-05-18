@@ -1,5 +1,5 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import React, { useContext } from "react";
+import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 // import landingPerson from "../../assets/lottie/landingPerson";
@@ -15,12 +15,12 @@ import Button from "../../components/button/Button";
 
 import {
   // illustration, 
-  greeting,contactInfo
+  greeting, contactInfo
 } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -38,25 +38,6 @@ export default function Greeting() {
               ></img>
             )}
           </div> */}
-          <div className="rounding-sec">
-                <div className="big-circle">
-                    <div className="icon-block">
-                        <img src={github} alt="" />
-                    </div>
-                    <div className="icon-block">
-                       <img src={instagram} alt="" />
-                    </div>
-                    <div className="icon-block">
-                        <img src={gitlab} alt="" />
-                    </div>
-                    <div className="icon-block">
-                        <img src={linkedin} alt="" />
-                    </div>
-                </div>
-                <div className="images">
-                    <img src={profile} alt="" className="img-w"/>
-                </div>
-            </div>
           <div className="greeting-text-div">
             <div>
               <h1
@@ -87,6 +68,25 @@ export default function Greeting() {
                   />
                 )}
               </div>
+            </div>
+          </div>
+          <div className="rounding-sec">
+            <div className="big-circle">
+              <div className="icon-block">
+                <img src={github} alt="" />
+              </div>
+              <div className="icon-block">
+                <img src={instagram} alt="" />
+              </div>
+              <div className="icon-block">
+                <img src={gitlab} alt="" />
+              </div>
+              <div className="icon-block">
+                <img src={linkedin} alt="" />
+              </div>
+            </div>
+            <div className="images">
+              <img src={profile} alt="" className="img-w" />
             </div>
           </div>
         </div>
