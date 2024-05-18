@@ -257,6 +257,9 @@
 @media screen and (max-width: 990px) {
   .greeting-main {
     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .rounding-sec {
       margin: auto;
@@ -266,7 +269,7 @@
 @media screen and (max-width:600px) {
   .greeting-main {
     grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
-    overflow-x: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column-reverse;
   }
