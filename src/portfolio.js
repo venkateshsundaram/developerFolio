@@ -174,9 +174,8 @@ const workExperiences = {
       date: "Oct 2022 – Present",
       desc: "Power of Platforms - multi module support for cloud ETL application",
       descBullets: [
-        "Developed admin features for an enterprise application.",
-        "Worked on cloud data integration.",
-        "Worked on data quality."
+        "Developed admin features for an ETL enterprise web application.",
+        "Built modules for CDI, and CAI products."
       ]
     },
     {
@@ -186,11 +185,11 @@ const workExperiences = {
       date: "May 2018 – Oct 2022",
       desc: "FreshReports - A plug and play web analytics.",
       descBullets: [
-        "Developed an embedded analytics for freshworks products.",
-        "Worked on advance filtering and groupby.",
-        "Worked on multi chart support.",
-        "Worked on custom attributes and metrics.",
-        "Worked on export service."
+        "Built embedded analytics from the ground up.",
+        "Implemented advanced filtering and group-by functionality.",
+        "Developed custom attributes and metrics, including formula creation based on data types and methods.",
+        "Added support for multiple charts.",
+        "Enhanced export services."
       ]
     },
     {
@@ -199,9 +198,9 @@ const workExperiences = {
       companylogo: require("./assets/images/colanInfotechLogo.png"),
       date: "October 2017 - April 2018",
       descBullets: [
-        "Developed a finance application which helps to categorise the transactions based on user’s credit limit.",
-        "Worked on transaction monitoring, card processing and virtual prepaid cards.",
-        "Developed a chatbot for online store."
+        "Created a finance application to categorize transactions according to the user's credit limit.",
+        "Managed transaction monitoring, card processing, and virtual prepaid card features.",
+        "Implemented multilingual support"
       ]
     },
     {
@@ -211,10 +210,10 @@ const workExperiences = {
       date: "August 2016 - October 2017",
       desc: "Cloud EDH - An enterprise ETL web application",
       descBullets: [
-        "Worked on mapping and validation, data transformation.",
-        "Worked on file explorer.",
-        "Worked on user authorization and authentication.",
-        "Worked on metadata and schema creation."
+        "Built an ETL enterprise web application from the ground up.",
+        "Handled mapping and validation, along with data transformation tasks.",
+        "Created metadata and schema structures.",
+        "Implemented user authorization and authentication with role-based access control."
       ]
     }
   ]
@@ -265,7 +264,7 @@ const hobbyProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://videotape.netlify.com/"
+          url: "https://videotape.netlify.app/"
         }
         //  you can add extra buttons here.
       ]
@@ -278,7 +277,7 @@ const hobbyProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://www.confabbox.com/"
+          url: "https://confabbox.netlify.app/"
         }
         //  you can add extra buttons here.
       ]
@@ -297,7 +296,7 @@ const achievementSection = {
   achievementsCards: [
     {
       title:
-        "Won third prize two consective times (Q2, Q3) in Freshworks internal hackathon 2022",
+        "Achieved third place in hackathons for two consecutive events",
       image: require("./assets/images/freshworks.png"),
       imageAlt: "Freshworks Logo",
       className: "semi-center-card",
