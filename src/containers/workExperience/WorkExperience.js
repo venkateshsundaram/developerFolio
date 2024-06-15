@@ -1,4 +1,4 @@
-import React, {useEffect,useState, useContext} from "react";
+import React, {useEffect, useState, useContext} from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import Button from "../../components/button/Button";
@@ -6,22 +6,25 @@ import {workExperiences} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function WorkExperience({ loadingState, updateShowMoreExperiences }) {
+export default function WorkExperience({
+  loadingState,
+  updateShowMoreExperiences
+}) {
   const {isDark} = useContext(StyleContext);
   const [enableMore, updateEnableMore] = useState(false);
   const [isLoading, updateLoading] = useState(false);
-  
+
   useEffect(() => {
-    updateLoading(loadingState)
+    updateLoading(loadingState);
   }, [loadingState]);
 
-  const updateExperience = (state) => {
+  const updateExperience = state => {
     updateShowMoreExperiences(true);
     setTimeout(() => {
       updateEnableMore(state);
       updateShowMoreExperiences(false);
-    }, 500)
-  }
+    }, 500);
+  };
 
   if (workExperiences.display) {
     return (
@@ -32,7 +35,7 @@ export default function WorkExperience({ loadingState, updateShowMoreExperiences
               <h1 className="experience-heading">Work Experiences</h1>
               <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {
-                  if ((!enableMore && i <2) || enableMore) {
+                  if ((!enableMore && i < 2) || enableMore) {
                     return (
                       <ExperienceCard
                         key={i}
@@ -50,17 +53,18 @@ export default function WorkExperience({ loadingState, updateShowMoreExperiences
                   }
                   return null;
                 })}
-                {isLoading && 
-                  <ExperienceCard 
+                {isLoading && (
+                  <ExperienceCard
                     isDark={isDark}
-                    isLoading={isLoading} 
+                    isLoading={isLoading}
                     loadingCount={3}
-                  />}
+                  />
+                )}
               </div>
               {!enableMore && (
                 <Button
                   text={"More Experiences"}
-                  onClick={(e) => {
+                  onClick={e => {
                     e.preventDefault();
                     updateExperience(true);
                   }}

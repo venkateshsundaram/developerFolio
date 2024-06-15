@@ -1,8 +1,13 @@
-import React, { useState, createRef } from "react";
+import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
-export default function ExperienceCard({ cardInfo, isDark, isLoading, loadingCount=1 }) {
+export default function ExperienceCard({
+  cardInfo,
+  isDark,
+  isLoading,
+  loadingCount = 1
+}) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
@@ -17,45 +22,50 @@ export default function ExperienceCard({ cardInfo, isDark, isLoading, loadingCou
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({ descBullets, isDark }) => {
+  const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
       ? descBullets.map((item, i) => (
-        <li
-          key={i}
-          className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-        >
-          {item}
-        </li>
-      ))
+          <li
+            key={i}
+            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+          >
+            {item}
+          </li>
+        ))
       : null;
   };
 
   if (isLoading) {
     return (
       <>
-        {Array(loadingCount).fill(0).map((loadingItem, loadingItemIndex) => {
-          return (
-            <div key={loadingItemIndex} className={isDark ? "loading-card-dark" : "loading-card"}>
-              <div className="shimmerBG media"></div>
-              <div className="p-32">
-                <div className="shimmerBG title-line"></div>
-                <div className="shimmerBG title-line end"></div>
-                <div className="shimmerBG content-line m-t-24"></div>
-                <div className="shimmerBG content-line"></div>
-                <div className="shimmerBG content-line"></div>
-                <div className="shimmerBG content-line"></div>
-                <div className="shimmerBG content-line end"></div>
+        {Array(loadingCount)
+          .fill(0)
+          .map((loadingItem, loadingItemIndex) => {
+            return (
+              <div
+                key={loadingItemIndex}
+                className={isDark ? "loading-card-dark" : "loading-card"}
+              >
+                <div className="shimmerBG media"></div>
+                <div className="p-32">
+                  <div className="shimmerBG title-line"></div>
+                  <div className="shimmerBG title-line end"></div>
+                  <div className="shimmerBG content-line m-t-24"></div>
+                  <div className="shimmerBG content-line"></div>
+                  <div className="shimmerBG content-line"></div>
+                  <div className="shimmerBG content-line"></div>
+                  <div className="shimmerBG content-line end"></div>
+                </div>
               </div>
-            </div>
-          )
-        })}
+            );
+          })}
       </>
     );
   }
 
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{ background: rgb(colorArrays) }} className="experience-banner">
+      <div style={{background: rgb(colorArrays)}} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>

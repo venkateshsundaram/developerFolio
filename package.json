@@ -22,20 +22,20 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
+    "start": "node fetch.js && react-scripts --openssl-legacy-provider start",
+    "build": "node fetch.js && react-scripts --openssl-legacy-provider build",
     "deploy": "gh-pages -b master -d build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "eject": "react-scripts --openssl-legacy-provider eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
     "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "engines" : { 
-    "npm" : "9.7.2",
-    "node" : "20.14.0"
+  "engines": {
+    "npm": "9.7.2",
+    "node": "20.14.0"
   },
   "browserslist": {
     "production": [

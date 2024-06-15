@@ -1,6 +1,7 @@
 @import "../../_globalColor";
 
-.main-button, .default-button {
+.main-button,
+.default-button {
   background-color: $buttonColor;
   border: solid 1px $buttonColor;
   color: $textColorDark;
@@ -35,7 +36,7 @@
   color: $buttonColor;
 }
 
-.dark-mode .default-button  {
+.dark-mode .default-button {
   background-color: $darkBackground !important;
   color: $buttonColor !important;
 }
@@ -48,8 +49,8 @@
   transform: translateY(-3px);
 }
 
-.dark-mode .default-button:hover  {
-  background-color: $buttonColor!important;
+.dark-mode .default-button:hover {
+  background-color: $buttonColor !important;
   color: $textColorDark !important;
 }
 

@@ -281,7 +281,7 @@ const hobbyProjects = {
         }
         //  you can add extra buttons here.
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -295,8 +295,7 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
   achievementsCards: [
     {
-      title:
-        "Achieved third place in hackathons for two consecutive events",
+      title: "Achieved third place in hackathons for two consecutive events",
       image: require("./assets/images/freshworks.png"),
       imageAlt: "Freshworks Logo",
       className: "semi-center-card",

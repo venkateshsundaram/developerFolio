@@ -56,8 +56,8 @@ const Main = () => {
             <Skills />
             <StackProgress />
             <Education />
-            <WorkExperience 
-              loadingState={showMoreExperiences} 
+            <WorkExperience
+              loadingState={showMoreExperiences}
               updateShowMoreExperiences={updateShowMoreExperiences}
             />
             <Projects />

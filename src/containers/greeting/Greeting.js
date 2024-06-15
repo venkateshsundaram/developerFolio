@@ -1,26 +1,27 @@
-import React, { useContext } from "react";
-import { Fade } from "react-reveal";
+import React, {useContext} from "react";
+import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 // import landingPerson from "../../assets/lottie/landingPerson";
-import profile from "../../assets/images/profile.png"
-import github from "../../assets/images/github.png"
-import gitlab from "../../assets/images/gitlab.png"
-import instagram from "../../assets/images/instagram.png"
-import linkedin from "../../assets/images/linkedin.png"
+import profile from "../../assets/images/profile.png";
+import github from "../../assets/images/github.png";
+import gitlab from "../../assets/images/gitlab.png";
+import instagram from "../../assets/images/instagram.png";
+import linkedin from "../../assets/images/linkedin.png";
 
 // import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
 import {
-  // illustration, 
-  greeting, contactInfo
+  // illustration,
+  greeting,
+  contactInfo
 } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -58,8 +59,22 @@ export default function Greeting() {
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
-                {greeting.displayContact && <Button className="greeting-button" newTab text="Say Hello!" href={`mailto:${contactInfo.email_address}`} />}
-                {greeting.displayReachout && <Button className="greeting-button" type="default" text="About Me" href="#reachout" />}
+                {greeting.displayContact && (
+                  <Button
+                    className="greeting-button"
+                    newTab
+                    text="Say Hello!"
+                    href={`mailto:${contactInfo.email_address}`}
+                  />
+                )}
+                {greeting.displayReachout && (
+                  <Button
+                    className="greeting-button"
+                    type="default"
+                    text="About Me"
+                    href="#reachout"
+                  />
+                )}
                 {greeting.resumeLink && (
                   <Button
                     text="See my resume"

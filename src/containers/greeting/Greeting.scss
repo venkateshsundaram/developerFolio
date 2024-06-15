@@ -146,10 +146,10 @@
 .images {
   margin-left: auto;
   width: 240px;
-}   
+}
 .images img {
   border-radius: 50%;
-  box-shadow: 0 0 10px #D1D9E6;
+  box-shadow: 0 0 10px #d1d9e6;
 }
 
 .img-w {
@@ -157,43 +157,43 @@
   height: auto;
 }
 
-  /* keyframe animation */
-  
-  @keyframes Rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+/* keyframe animation */
+
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
   }
-  
-  @-webkit-keyframes Rotate {
-    from {
-      -webkit-transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
-  
-  @keyframes Rotate-reverse {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
+}
+
+@-webkit-keyframes Rotate {
+  from {
+    -webkit-transform: rotate(0deg);
   }
-  
-  @-webkit-keyframes Rotate-reverse {
-    from {
-      -webkit-transform: rotate(360deg);
-    }
-    to {
-      -webkit-transform: rotate(0deg);
-    }
+  to {
+    -webkit-transform: rotate(360deg);
   }
+}
+
+@keyframes Rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes Rotate-reverse {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
 @keyframes wave {
   0% {
     transform: rotate(0deg);
@@ -262,11 +262,11 @@
     flex-direction: column-reverse;
   }
   .rounding-sec {
-      margin: auto;
+    margin: auto;
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .greeting-main {
     grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
     overflow: hidden;
@@ -274,14 +274,14 @@
     flex-direction: column-reverse;
   }
   .icon-block {
-      width: 50px;
-      height: 50px;
+    width: 50px;
+    height: 50px;
   }
   .rounding-sec {
-      height: 270px;
-      width: 270px;
+    height: 270px;
+    width: 270px;
   }
   .images {
-      width: 200px;
+    width: 200px;
   }
 }
