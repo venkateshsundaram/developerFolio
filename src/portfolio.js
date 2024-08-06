@@ -174,8 +174,9 @@ const workExperiences = {
       date: "Oct 2022 – Present",
       desc: "Power of Platforms - multi module support for cloud ETL application",
       descBullets: [
-        "Developed admin features for an ETL enterprise web application.",
-        "Built modules for CDI, and CAI products."
+        "Developed administrative features for Informatica Intelligent Cloud Services (IICS) product.",
+        "Designed and implemented modules for Cloud Data Integration (CDI), Cloud Application Integration (CAI), and Cloud Data Quality (CDQ)",
+        "Conducted unit testing, and integration testing using Jest and Playwright."
       ]
     },
     {
@@ -185,11 +186,10 @@ const workExperiences = {
       date: "May 2018 – Oct 2022",
       desc: "FreshReports - A plug and play web analytics.",
       descBullets: [
-        "Built embedded analytics from the ground up.",
-        "Implemented advanced filtering and group-by functionality.",
-        "Developed custom attributes and metrics, including formula creation based on data types and methods.",
-        "Added support for multiple charts.",
-        "Enhanced export services."
+        "Developed embedded analytics from scratch.",
+        "Implemented sophisticated filtering and grouping capabilities within the analytics solution, enabling users to slice and dice data effortlessly and gain valuable insights.",
+        "Created custom attributes and metrics, including defining formulas based on data types and methods.",
+        "Enhanced the export services within the analytics platform."
       ]
     },
     {
@@ -198,9 +198,9 @@ const workExperiences = {
       companylogo: require("./assets/images/colanInfotechLogo.png"),
       date: "October 2017 - April 2018",
       descBullets: [
-        "Created a finance application to categorize transactions according to the user's credit limit.",
-        "Managed transaction monitoring, card processing, and virtual prepaid card features.",
-        "Implemented multilingual support"
+        "Developed a finance application that categorizes transactions based on the user's credit limit.",
+        "Oversaw transaction monitoring, card processing, and features for virtual prepaid cards.",
+        "Integrated multilingual support to enhance accessibility."
       ]
     },
     {
@@ -210,10 +210,9 @@ const workExperiences = {
       date: "August 2016 - October 2017",
       desc: "Cloud EDH - An enterprise ETL web application",
       descBullets: [
-        "Built an ETL enterprise web application from the ground up.",
-        "Handled mapping and validation, along with data transformation tasks.",
-        "Created metadata and schema structures.",
-        "Implemented user authorization and authentication with role-based access control."
+        "Designed and developed an enterprise-level ETL (Extract, Transform, Load) web application from the ground up.",
+        "Managed mapping, validation, and data transformation tasks, ensuring data integrity and quality throughout the processes.",
+        "Implemented user authorization and authentication with role-based access."
       ]
     }
   ]
