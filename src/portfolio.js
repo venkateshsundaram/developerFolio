@@ -172,11 +172,17 @@ const workExperiences = {
       company: "Informatica",
       companylogo: require("./assets/images/informatica.jpeg"),
       date: "Oct 2022 – Present",
-      desc: "Power of Platforms - multi module support for cloud ETL application",
+      desc: "Power of Platforms",
       descBullets: [
-        "Developed administrative features for Informatica Intelligent Cloud Services (IICS) product.",
-        "Designed and implemented modules for Cloud Data Integration (CDI), Cloud Application Integration (CAI), and Cloud Data Quality (CDQ)",
-        "Conducted unit testing, and integration testing using Jest and Playwright."
+        "Developed and implemented administrative features for Informatica Intelligent Cloud Services (IICS) products.",
+        "Led the development team in delivering features for both monthly and standard releases.",
+        "Refactored the existing in-house framework (Symphony) to React and TypeScript.",
+        "Prioritized and efficiently resolved customer-facing issues, improving overall customer satisfaction.",
+        "Took responsibility for triaging and fixing backlog bugs and stories to enhance application quality.",
+        "Expanded the in-house design library (Droplets) by introducing new features.",
+        "Assisted in migrating the existing codebase to a monorepo using NX and Vite.",
+        "Actively contributed to technical and architectural reviews, optimizing application performance.",
+        "Conducted unit and integration testing using Jest and Playwright."
       ]
     },
     {
@@ -184,12 +190,13 @@ const workExperiences = {
       company: "Freshworks",
       companylogo: require("./assets/images/freshworks.png"),
       date: "May 2018 – Oct 2022",
-      desc: "FreshReports - A plug and play web analytics.",
+      desc: "FreshReports",
       descBullets: [
         "Developed embedded analytics from scratch.",
         "Implemented sophisticated filtering and grouping capabilities within the analytics solution, enabling users to slice and dice data effortlessly and gain valuable insights.",
-        "Created custom attributes and metrics, including defining formulas based on data types and methods.",
-        "Enhanced the export services within the analytics platform."
+        "Developed custom attributes and metrics by defining formulas tailored to data types and methods.",
+        "Built a self-service portal to facilitate analytics onboarding for the internal team.",
+        "Improved the export services of the analytics platform."
       ]
     },
     {
@@ -198,9 +205,9 @@ const workExperiences = {
       companylogo: require("./assets/images/colanInfotechLogo.png"),
       date: "October 2017 - April 2018",
       descBullets: [
-        "Developed a finance application that categorizes transactions based on the user's credit limit.",
+        "Developed a fintech application from scratch.",
         "Oversaw transaction monitoring, card processing, and features for virtual prepaid cards.",
-        "Integrated multilingual support to enhance accessibility."
+        "Implemented multilingual support to improve accessibility."
       ]
     },
     {
@@ -208,11 +215,11 @@ const workExperiences = {
       company: "Aline Oy",
       companylogo: require("./assets/images/alineLogo.png"),
       date: "August 2016 - October 2017",
-      desc: "Cloud EDH - An enterprise ETL web application",
+      desc: "Cloud EDH",
       descBullets: [
         "Designed and developed an enterprise-level ETL (Extract, Transform, Load) web application from the ground up.",
         "Managed mapping, validation, and data transformation tasks, ensuring data integrity and quality throughout the processes.",
-        "Implemented user authorization and authentication with role-based access."
+        "Developed role-based user authorization and authentication."
       ]
     }
   ]
