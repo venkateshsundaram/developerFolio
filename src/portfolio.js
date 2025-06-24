@@ -301,7 +301,19 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
   achievementsCards: [
     {
-      title: "Achieved third place in hackathons for two consecutive events",
+      title: "Authored and open-sourced a compact state management library.",
+      image: require("./assets/images/statejetLogo.png"),
+      imageAlt: "StateJet Logo",
+      className: "semi-center-card",
+      footerLink: [
+        {
+          name: "Link to Repository",
+          url: "https://www.npmjs.com/package/state-jet"
+        }
+      ]
+    },
+    {
+      title: "Achieved back-to-back third-place finishes in hackathons.",
       image: require("./assets/images/freshworks.png"),
       imageAlt: "Freshworks Logo",
       className: "semi-center-card",
@@ -312,7 +324,7 @@ const achievementSection = {
       ]
     },
     {
-      title: "Scrum Master Basic",
+      title: "Scrum Master",
       image: require("./assets/images/learnTubeLogo.png"),
       imageAlt: "LearnTube Logo",
       className: "semi-center-card",
@@ -341,6 +353,13 @@ const blogSection = {
         "Build your Own Google meet launcher (chrome extension) less than 15minutes",
       description:
         "Gmeet-helper is a chrome extension which helps the user to create instant google meetings with shortcut friendly, link sharing and calendar push event supports."
+    },
+    {
+      url: "https://medium.com/@contactvenkateshsundaram/why-state-jet-is-the-most-efficient-react-state-management-library-a7551358f72a",
+      title:
+        "Why State-Jet is the Most Efficient React State Management Library in 2025",
+      description:
+        "State-Jet delivers a state management experience other libraries can’t match: blazing fast updates, secure persistence, zero-boilerplate, and real-time-ready."
     }
   ],
   display: true // Set false to hide this section, defaults to true

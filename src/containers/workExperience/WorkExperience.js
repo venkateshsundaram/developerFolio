@@ -13,6 +13,7 @@ export default function WorkExperience({
   const {isDark} = useContext(StyleContext);
   const [enableMore, updateEnableMore] = useState(false);
   const [isLoading, updateLoading] = useState(false);
+  const [expandIndex, setExpandIndex] = useState();
 
   useEffect(() => {
     updateLoading(loadingState);
@@ -40,6 +41,9 @@ export default function WorkExperience({
                       <ExperienceCard
                         key={i}
                         isDark={isDark}
+                        index={i}
+                        setExpandIndex={setExpandIndex}
+                        expandIndex={expandIndex}
                         cardInfo={{
                           company: card.company,
                           desc: card.desc,

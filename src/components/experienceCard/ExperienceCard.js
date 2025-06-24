@@ -1,4 +1,4 @@
-import React, {useState, createRef} from "react";
+import React, { useState, createRef } from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
@@ -6,9 +6,13 @@ export default function ExperienceCard({
   cardInfo,
   isDark,
   isLoading,
+  index,
+  expandIndex,
+  setExpandIndex,
   loadingCount = 1
 }) {
   const [colorArrays, setColorArrays] = useState([]);
+  const expand = expandIndex === index;
   const imgRef = createRef();
 
   function getColorArrays() {
@@ -22,16 +26,16 @@ export default function ExperienceCard({
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
+  const GetDescBullets = ({ descBullets, isDark }) => {
     return descBullets
       ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
+        <li
+          key={i}
+          className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+        >
+          {item}
+        </li>
+      ))
       : null;
   };
 
@@ -64,8 +68,8 @@ export default function ExperienceCard({
   }
 
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+    <div style={{ height: !expand ? "max-content": "100%" }} onClick={() => setExpandIndex(index === expandIndex ? null : index)} className={isDark ? "experience-card-dark" : "experience-card"}>
+      <div style={{ background: rgb(colorArrays) }} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
@@ -98,7 +102,7 @@ export default function ExperienceCard({
         >
           {cardInfo.date}
         </h5>
-        <p
+        {expand && <><p
           className={
             isDark
               ? "subTitle experience-text-desc dark-mode-text"
@@ -107,9 +111,10 @@ export default function ExperienceCard({
         >
           {cardInfo.desc}
         </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
+          <ul>
+            <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
+          </ul>
+        </>}
       </div>
     </div>
   );
