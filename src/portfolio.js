@@ -168,22 +168,19 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "MTS Software Engineering",
+      company: "Salesforce",
+      companylogo: require("./assets/images/salesforce.webp"),
+      date: "Mar 2026 – Present",
+      descBullets: []
+    },
+    {
       role: "Lead Software Engineer",
       company: "Informatica",
       companylogo: require("./assets/images/informatica.jpeg"),
-      date: "Oct 2022 – Present",
+      date: "Oct 2022 – Mar 2026",
       desc: "Power of Platforms",
-      descBullets: [
-        "Developed and implemented administrative features for Informatica Intelligent Cloud Services (IICS) products.",
-        "Led the development team in delivering features for both monthly and standard releases.",
-        "Refactored the existing in-house framework (Symphony) to React and TypeScript.",
-        "Prioritized and efficiently resolved customer-facing issues, improving overall customer satisfaction.",
-        "Took responsibility for triaging and fixing backlog bugs and stories to enhance application quality.",
-        "Expanded the in-house design library (Droplets) by introducing new features.",
-        "Assisted in migrating the existing codebase to a monorepo using NX and Vite.",
-        "Actively contributed to technical and architectural reviews, optimizing application performance.",
-        "Conducted unit and integration testing using Jest and Playwright."
-      ]
+      descBullets: []
     },
     {
       role: "Lead Software Engineer",
@@ -191,24 +188,14 @@ const workExperiences = {
       companylogo: require("./assets/images/freshworks.png"),
       date: "May 2018 – Oct 2022",
       desc: "FreshReports",
-      descBullets: [
-        "Developed embedded analytics from scratch.",
-        "Implemented sophisticated filtering and grouping capabilities within the analytics solution, enabling users to slice and dice data effortlessly and gain valuable insights.",
-        "Developed custom attributes and metrics by defining formulas tailored to data types and methods.",
-        "Built a self-service portal to facilitate analytics onboarding for the internal team.",
-        "Improved the export services of the analytics platform."
-      ]
+      descBullets: []
     },
     {
       role: "Software Engineer",
       company: "Colan Infotech",
       companylogo: require("./assets/images/colanInfotechLogo.png"),
       date: "October 2017 - April 2018",
-      descBullets: [
-        "Developed a fintech application from scratch.",
-        "Oversaw transaction monitoring, card processing, and features for virtual prepaid cards.",
-        "Implemented multilingual support to improve accessibility."
-      ]
+      descBullets: []
     },
     {
       role: "Software Developer",
@@ -216,11 +203,7 @@ const workExperiences = {
       companylogo: require("./assets/images/alineLogo.png"),
       date: "August 2016 - October 2017",
       desc: "Cloud EDH",
-      descBullets: [
-        "Designed and developed an enterprise-level ETL (Extract, Transform, Load) web application from the ground up.",
-        "Managed mapping, validation, and data transformation tasks, ensuring data integrity and quality throughout the processes.",
-        "Developed role-based user authorization and authentication."
-      ]
+      descBullets: []
     }
   ]
 };
@@ -300,6 +283,18 @@ const achievementSection = {
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
   achievementsCards: [
+    {
+      title: "Authored and open-sourced a lightweight, ultra-fast CLI for building React applications.",
+      image: require("./assets/images/reactClientLogo.png"),
+      imageAlt: "React Client Logo",
+      className: "semi-center-card",
+      footerLink: [
+        {
+          name: "Link to Repository",
+          url: "https://www.npmjs.com/package/react-client"
+        }
+      ]
+    },
     {
       title: "Authored and open-sourced a compact state management library.",
       image: require("./assets/images/statejetLogo.png"),

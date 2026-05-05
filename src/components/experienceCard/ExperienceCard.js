@@ -54,11 +54,11 @@ export default function ExperienceCard({
                 <div className="p-32">
                   <div className="shimmerBG title-line"></div>
                   <div className="shimmerBG title-line end"></div>
-                  <div className="shimmerBG content-line m-t-24"></div>
+                  {/* <div className="shimmerBG content-line m-t-24"></div>
                   <div className="shimmerBG content-line"></div>
                   <div className="shimmerBG content-line"></div>
                   <div className="shimmerBG content-line"></div>
-                  <div className="shimmerBG content-line end"></div>
+                  <div className="shimmerBG content-line end"></div> */}
                 </div>
               </div>
             );
@@ -102,7 +102,7 @@ export default function ExperienceCard({
         >
           {cardInfo.date}
         </h5>
-        {expand && <><p
+        {/* {expand && <><p
           className={
             isDark
               ? "subTitle experience-text-desc dark-mode-text"
@@ -114,7 +114,7 @@ export default function ExperienceCard({
           <ul>
             <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
           </ul>
-        </>}
+        </>} */}
       </div>
     </div>
   );
