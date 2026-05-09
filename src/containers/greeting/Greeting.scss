@@ -2,7 +2,7 @@
 
 .greet-main {
   width: 100%;
-  padding: 100px 20px;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +41,7 @@
 
 .button-greeting-div {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   justify-content: center;
   margin-bottom: 60px;
 }
@@ -85,6 +85,10 @@
 }
 
 @media (max-width: 768px) {
+  .greet-main {
+    padding-top: 100px;
+  }
+
   .greeting-main {
     flex-direction: column;
     text-align: center;

@@ -42,7 +42,7 @@ function Header() {
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"} onClick={closeMenu}>
+        <ul className="menu" onClick={closeMenu}>
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>

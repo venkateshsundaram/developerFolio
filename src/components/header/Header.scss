@@ -175,15 +175,21 @@
     background: white !important;
   }
 
-  .menu {
-    background: #121212 !important;
-  }
-
   a {
     color: white !important;
     
     &:hover {
       background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+  }
+
+  .logo {
+    color: white !important;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      background: #121212 !important;
     }
   }
 }
