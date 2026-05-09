@@ -2,11 +2,13 @@
 
 .greet-main {
   width: 100%;
+  max-width: 100vw;
   padding: 120px 20px 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .greeting-main {

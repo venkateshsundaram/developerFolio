@@ -51,7 +51,7 @@ const Main = () => {
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
         ) : (
-          <>
+          <div style={{ overflowX: "hidden", width: "100%", position: "relative" }}>
             <Header />
             <Greeting />
             <Skills />
@@ -65,7 +65,7 @@ const Main = () => {
             <Blogs />
             <Profile />
             <ScrollToTopButton />
-          </>
+          </div>
         )}
       </StyleProvider>
     </div>

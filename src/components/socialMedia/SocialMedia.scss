@@ -2,6 +2,10 @@
 
 .social-media-div {
   font-size: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
 }
 
 .icon-button {
@@ -16,7 +20,7 @@
   font-size: 1.3rem;
   height: 2.6rem;
   line-height: 2.6rem;
-  margin: 0 10px;
+  margin: 0 5px;
   position: relative;
   text-align: center;
   -webkit-user-select: none;

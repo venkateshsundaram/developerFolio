@@ -98,9 +98,13 @@ $githubProfileCardBorder: $primary-blue;
 $githubProfileCardLocationTS: #64748b;
 
 // Global overrides
+html {
+  @include blueprint-bg;
+}
+
 body {
   font-family: $font-sans;
-  @include blueprint-bg;
+  background: transparent;
   color: $primary-black;
 }
 
