@@ -68,19 +68,11 @@ function Header() {
               <a href="#blogs">Blogs</a>
             </li>
           )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
-            </li>
-          )}
           <li>
             <a href="#reachout">About Me</a>
           </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+          <li className="nav-toggle">
+            <ToggleSwitch />
           </li>
         </ul>
       </header>

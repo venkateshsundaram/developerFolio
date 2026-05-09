@@ -63,8 +63,8 @@ const Main = () => {
             <ProjectSection projects={hobbyProjects} />
             <Achievement />
             <Blogs />
-            <Talks />
             <Profile />
+            <ScrollToTopButton />
           </>
         )}
       </StyleProvider>
