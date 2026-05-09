@@ -1,31 +1,70 @@
 @import "../../_globalColor";
 
+.software-skills-main-div {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 .dev-icons {
-  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  padding: 0;
+  gap: 20px;
+  max-width: 800px;
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 150, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  width: 100px;
+
+  i {
+    font-size: 2.5rem;
+    color: $primary-blue;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: $font-sans;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+    color: $primary-black;
+  }
+
+  &:hover {
+    transform: scale(1.1) rotate(5deg);
+    border-color: $primary-blue;
+    box-shadow: 0 10px 20px rgba(0, 150, 255, 0.1);
+  }
 }
 
-.software-skill-inline > i {
-  color: $subTitle;
+// Staggered effect for "Arc" feel
+.software-skill-inline:nth-child(odd) {
+  transform: translateY(10px);
+}
+.software-skill-inline:nth-child(even) {
+  transform: translateY(-10px);
 }
 
-.software-skill-inline > i:hover {
-  color: $skillsColor;
-}
-.software-skill-inline > p {
-  color: $subTitle;
-  font-size: 10px;
-}
-.software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
+// Dark mode
+.dark-mode {
+  .software-skill-inline {
+    background: #1a1a1a;
+    border-color: rgba(255, 255, 255, 0.1);
+    
+    p {
+      color: white;
+    }
+  }
 }

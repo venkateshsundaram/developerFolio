@@ -1,37 +1,41 @@
-.experience-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+@import "../../_globalColor";
+
+.experience-container {
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 .experience-heading {
-  font-size: 56px;
-  font-weight: 400;
+  font-family: $font-serif;
+  font-size: 3.5rem;
+  color: $primary-black;
+  margin-bottom: 60px;
 }
 
-.experience-container {
-  display: flex;
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
-}
-
-.experience-container > * {
-  flex: 1;
-}
-
-/* Media Query */
-
-@media (max-width: 1380px) {
-  .experience-heading {
-    font-size: 40px;
-  }
+.experience-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 @media (max-width: 768px) {
   .experience-heading {
-    font-size: 30px;
-    text-align: center;
+    font-size: 2.5rem;
+  }
+  .experience-cards-div {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Dark mode
+.dark-mode {
+  .experience-heading {
+    color: white;
   }
 }

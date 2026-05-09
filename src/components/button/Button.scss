@@ -73,5 +73,8 @@
 @media (max-width: 320px) {
   .main-button {
     font-size: 0.75rem;
+    padding: 10px 14px;
+    width: auto;
+    min-width: 120px;
   }
 }

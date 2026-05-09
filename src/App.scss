@@ -1,31 +1,52 @@
 @import "./globalColor";
 
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
   width: 100%;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: $appHeaderBG;
+.App {
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(0.625rem + 2vmin);
-  color: $textColorDark;
-}
-
-.App-link {
-  color: $appLink;
+  overflow-x: hidden;
 }
 
 .subTitle {
   color: $subTitle;
-  padding-bottom: 10px;
+  font-family: $font-sans;
+  line-height: 1.6;
+}
+
+// Global button reset to pill shape
+button, .btn, .button {
+  border-radius: $btn-radius !important;
+  font-family: $font-sans !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  transition: all 0.3s ease !important;
+}
+
+// Fade animations override
+.react-reveal {
+  animation-fill-mode: both;
+}
+.container-main {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    padding: 40px 20px;
+  }
 }

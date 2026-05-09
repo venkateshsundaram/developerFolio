@@ -40,23 +40,23 @@ export default function GithubRepoCard({repo, isDark}) {
           <div className="repo-stats">
             <div className="repo-left-stat">
               {repo.node.primaryLanguage !== null && (
-                <span>
+                <div className="stat-item">
                   <div
                     className="language-color"
                     style={{backgroundColor: repo.node.primaryLanguage.color}}
                   ></div>
                   <p>{repo.node.primaryLanguage.name}</p>
-                </span>
+                </div>
               )}
-              <span>
+              <div className="stat-item">
                 <svg
                   aria-hidden="true"
-                  className="octicon repo-star-svg"
-                  height="20"
+                  className="octicon repo-stat-svg"
+                  height="16"
                   role="img"
                   viewBox="0 0 10 16"
                   width="12"
-                  fill="rgb(106, 115, 125)"
+                  fill="currentColor"
                 >
                   <path
                     fillRule="evenodd"
@@ -64,16 +64,16 @@ export default function GithubRepoCard({repo, isDark}) {
                   ></path>
                 </svg>
                 <p>{repo.node.forkCount}</p>
-              </span>
-              <span>
+              </div>
+              <div className="stat-item">
                 <svg
                   aria-hidden="true"
-                  className="octicon repo-star-svg"
-                  height="20"
+                  className="octicon repo-stat-svg"
+                  height="16"
                   role="img"
                   viewBox="0 0 14 16"
                   width="14"
-                  fill="rgb(106, 115, 125)"
+                  fill="currentColor"
                 >
                   <path
                     fillRule="evenodd"
@@ -81,10 +81,10 @@ export default function GithubRepoCard({repo, isDark}) {
                   ></path>
                 </svg>
                 <p>{repo.node.stargazers.totalCount}</p>
-              </span>
-            </div>
-            <div className="repo-right-stat">
-              <p>{repo.node.diskUsage} KB</p>
+              </div>
+              <div className="stat-item disk-usage">
+                <p>{repo.node.diskUsage} KB</p>
+              </div>
             </div>
           </div>
         </div>

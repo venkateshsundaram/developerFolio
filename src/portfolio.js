@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Venkatesh Sundaram",
+  username: "Venkatesh",
   title: "Hi all, I'm Venkatesh",
   subTitle: emoji(
     "A passionate software professional 🚀 having an experience of building web and mobile applications with popular javascript frameworks and react native."
@@ -53,7 +53,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY TECHIE WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Crazy techie who wants to explore every tech stack",
   skills: [
     emoji(
       "⚡ Developing highly interactive Frontend / User Interfaces for your web and mobile applications"
@@ -243,7 +243,7 @@ const bigProjects = {
 
 const hobbyProjects = {
   title: "Hobby Projects",
-  subtitle: "GREAT PROJECTS THAT I BUILD WHEN I HAVE FREE TIME",
+  subtitle: "Great projects that I build when I have free time",
   projects: [
     {
       image: require("./assets/images/videotape.png"),
@@ -365,7 +365,7 @@ const blogSection = {
 const talkSection = {
   title: "Talks",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "I love to share my limited knowledge and get a speaker badge 😅"
   ),
   talks: [
     {

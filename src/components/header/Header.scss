@@ -1,192 +1,188 @@
-@import "../../_globalColor";
-
-/*React-headroom*/
-.headroom-wrapper {
-  max-height: 100px;
-}
-
-/* header */
-
-.dark-menu {
-  background-color: $darkBackground !important;
-  color: $textColorDark !important;
-}
-
-.dark-menu li a {
-  color: $textColorDark !important;
-}
-
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
-}
+@import "../../globalColor";
 
 .header {
-  background-color: $lightBackground1;
-  max-width: 100%;
-  padding: 15px 20px;
-  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  margin: 20px auto;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 150, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  max-width: 90%;
+  z-index: 2000;
 }
 
-.header ul {
+.logo {
+  text-decoration: none;
+  font-family: $font-serif;
+  font-size: 1.2rem;
+  color: $primary-black;
+  display: flex;
+  align-items: center;
+  z-index: 2001;
+  
+  .grey-color {
+    color: $primary-blue;
+    font-weight: bold;
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
-  overflow: hidden;
-}
-
-.grey-color {
-  color: $subTitle;
-}
-
-.header li a {
-  display: block;
-  padding: 15px 20px;
-  color: $textColor;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: $headerHoverBG;
-}
-
-.header .logo {
-  display: block;
-  flex: none;
-  float: left;
-  font-size: 1.5em;
-  text-decoration: none;
-  margin-top: 10px;
-  max-width: 180px;
-  line-height: normal;
-}
-
-.header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bold;
-  font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
+  align-items: center;
   white-space: nowrap;
-  padding: 0 10px;
-  color: $textColor;
+
+  li {
+    margin-left: 20px;
+
+    a {
+      text-decoration: none;
+      color: $primary-black;
+      font-family: $font-sans;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: rgba(0, 150, 255, 0.1);
+        color: $primary-blue;
+      }
+    }
+  }
 }
 
-/* menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
+.menu-btn {
+  display: none;
 }
 
-/* menu icon */
-
-.header .menu-icon {
+.menu-icon {
   cursor: pointer;
-  display: inline-block;
-  float: right;
+  display: none;
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  z-index: 2001;
 }
 
-.header .menu-icon .navicon {
-  background: $iconBackground;
+.navicon {
+  background: $primary-black;
   display: block;
   height: 2px;
   position: relative;
   transition: background 0.2s ease-out;
   width: 18px;
-}
 
-.header .menu-icon .navicon-dark {
-  background: $textColorDark;
-}
+  &::before, &::after {
+    background: $primary-black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: $iconBackground;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon-dark:before,
-.header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 486px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent !important;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
+  &::before { top: 5px; }
+  &::after { top: -5px; }
 }
 
 @media (max-width: 768px) {
   .header {
-    font-size: 1rem;
+    width: 92%;
+    left: 4%;
+    transform: none;
+    top: 10px;
+    padding: 6px 15px;
+    border-radius: 30px;
   }
-}
 
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
+  .logo {
+    font-size: 1.1rem;
   }
-  .header {
-    display: flex;
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    box-shadow: none;
+    z-index: 1999;
+    
+    li {
+      margin: 15px 0;
+      width: 100%;
+      text-align: center;
+      
+      a {
+        font-size: 1.1rem;
+        display: inline-block;
+        padding: 10px 25px;
+      }
+    }
   }
-  .header .menu {
-    max-height: none;
+
+  .menu-icon {
+    display: block;
+    padding: 20px 10px;
   }
-  .header .menu-icon {
-    display: none;
+
+  .menu-btn:checked ~ .menu {
+    right: 0;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+    top: 0;
   }
 }
 
-@media (max-width: 1280px) and (min-width: 768px) {
-  .header {
-    font-size: 12px;
+// Dark mode overrides
+.dark-menu {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  
+  .navicon, .navicon::before, .navicon::after {
+    background: white !important;
+  }
+
+  .menu {
+    background: #121212 !important;
+  }
+
+  a {
+    color: white !important;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
   }
 }

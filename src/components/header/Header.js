@@ -22,14 +22,16 @@ function Header() {
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
 
+  const closeMenu = () => {
+    const checkbox = document.getElementById("menu-btn");
+    if (checkbox) checkbox.checked = false;
+  };
+
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="/" className="logo">
+        <a href="/" className="logo" style={{whiteSpace: "nowrap"}}>
           <span className="grey-color"> &lt;</span>
-          <span className={isDark ? "dark-menu logo-name" : "logo-name"}>
-            {greeting.username}
-          </span>
           <span className="grey-color">/&gt;</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -40,7 +42,7 @@ function Header() {
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"}>
+        <ul className={isDark ? "dark-menu menu" : "menu"} onClick={closeMenu}>
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
