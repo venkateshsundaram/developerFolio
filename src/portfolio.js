@@ -23,7 +23,7 @@ const greeting = {
   username: "Venkatesh",
   title: "Hi all, I'm Venkatesh",
   subTitle: emoji(
-    "A passionate software professional 🚀 having an experience of building web and mobile applications with popular javascript frameworks and react native."
+    "A passionate software professional 🚀 having an experience of building web and mobile applications."
   ),
   displayContact: true,
   displayReachout: true,
