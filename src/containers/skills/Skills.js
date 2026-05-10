@@ -43,7 +43,7 @@ export default function Skills() {
           <div className="expertise-cloud">
             <h2 className="expertise-title">Design & Architecture Expertise</h2>
             <div className="tag-container">
-              <span className="tag">UI/UX Design</span>
+              <span className="tag">Web Development</span>
               <span className="tag">System Architecture</span>
               <span className="tag">Cloud Infrastructure</span>
               <span className="tag">Mobile Development</span>
