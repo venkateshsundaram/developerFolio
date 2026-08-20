@@ -53,7 +53,6 @@ export default function Greeting() {
 {`{
   "name": "${greeting.username}",
   "role": "Software Professional",
-  "skills": ["JavaScript", "React", "Node.js", "Python", "UI/UX"],
   "status": "Ready to build something amazing!"
 }`}
               </div>

@@ -98,11 +98,11 @@
   }
 
   .terminal-content {
-    background: #1e1e1e;
+    background: #ffffff;
     padding: 24px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.95rem;
-    color: #e6e6e6;
+    color: #334155;
     text-align: left;
     min-height: 260px;
     border-bottom-left-radius: 12px;
@@ -114,28 +114,28 @@
     }
     
     .prompt {
-      color: #4ade80;
+      color: #059669;
       margin-right: 8px;
       font-weight: 600;
     }
     
     .command {
-      color: #60a5fa;
+      color: #2563eb;
     }
     
     .output {
-      color: #9ca3af;
+      color: #475569;
       margin-bottom: 16px;
       white-space: pre-wrap;
       padding-left: 12px;
-      border-left: 2px solid #333;
+      border-left: 2px solid #e2e8f0;
     }
     
     .cursor {
       display: inline-block;
       width: 8px;
       height: 16px;
-      background: #e6e6e6;
+      background: #334155;
       animation: blink 1s step-end infinite;
       vertical-align: middle;
       margin-left: 4px;
@@ -224,6 +224,28 @@
     
     .browser-header {
       background: #262626;
+    }
+  }
+
+  .terminal-content {
+    background: #1e1e1e;
+    color: #e6e6e6;
+    
+    .prompt {
+      color: #4ade80;
+    }
+    
+    .command {
+      color: #60a5fa;
+    }
+    
+    .output {
+      color: #9ca3af;
+      border-left-color: #333333;
+    }
+    
+    .cursor {
+      background: #e6e6e6;
     }
   }
 }
