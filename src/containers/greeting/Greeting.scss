@@ -96,6 +96,56 @@
       display: block;
     }
   }
+
+  .terminal-content {
+    background: #1e1e1e;
+    padding: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    color: #e6e6e6;
+    text-align: left;
+    min-height: 260px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    
+    .terminal-line {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    
+    .prompt {
+      color: #4ade80;
+      margin-right: 8px;
+      font-weight: 600;
+    }
+    
+    .command {
+      color: #60a5fa;
+    }
+    
+    .output {
+      color: #9ca3af;
+      margin-bottom: 16px;
+      white-space: pre-wrap;
+      padding-left: 12px;
+      border-left: 2px solid #333;
+    }
+    
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 16px;
+      background: #e6e6e6;
+      animation: blink 1s step-end infinite;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 @media (max-width: 1024px) {

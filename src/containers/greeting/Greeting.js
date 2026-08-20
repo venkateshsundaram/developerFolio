@@ -44,11 +44,23 @@ export default function Greeting() {
               <div className="dot yellow"></div>
               <div className="dot green"></div>
             </div>
-            <div className="browser-content">
-              <img
-                src={require("../../assets/images/hero-illustration-wide.jpg")}
-                alt="Professional Illustration"
-              />
+            <div className="browser-content terminal-content">
+              <div className="terminal-line">
+                <span className="prompt">{greeting.username.toLowerCase()}@portfolio:~$</span>
+                <span className="command">cat profile.json</span>
+              </div>
+              <div className="output">
+{`{
+  "name": "${greeting.username}",
+  "role": "Software Professional",
+  "skills": ["JavaScript", "React", "Node.js", "Python", "UI/UX"],
+  "status": "Ready to build something amazing!"
+}`}
+              </div>
+              <div className="terminal-line">
+                <span className="prompt">{greeting.username.toLowerCase()}@portfolio:~$</span>
+                <span className="cursor"></span>
+              </div>
             </div>
           </div>
         </div>
