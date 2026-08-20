@@ -49,12 +49,21 @@
   }
 }
 
-// Staggered effect for "Arc" feel
-.software-skill-inline:nth-child(odd) {
-  transform: translateY(10px);
+// Staggered effect for "Arc" feel - only on desktop
+@media (min-width: 768px) {
+  .software-skill-inline:nth-child(odd) {
+    transform: translateY(10px);
+  }
+  .software-skill-inline:nth-child(even) {
+    transform: translateY(-10px);
+  }
 }
-.software-skill-inline:nth-child(even) {
-  transform: translateY(-10px);
+
+// Add extra margin for mobile to prevent overlap
+@media (max-width: 767px) {
+  .dev-icons {
+    gap: 25px;
+  }
 }
 
 // Dark mode
