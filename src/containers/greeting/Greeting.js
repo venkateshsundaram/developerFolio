@@ -46,7 +46,7 @@ export default function Greeting() {
             </div>
             <div className="browser-content">
               <img
-                src={require("../../assets/images/hero-illustration-man.png")}
+                src={require("../../assets/images/hero-illustration-3d.jpg")}
                 alt="Professional Illustration"
               />
             </div>

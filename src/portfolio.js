@@ -56,9 +56,9 @@ const skillsSection = {
   subTitle: "Techie who wants to explore every tech stack",
   skills: [
     emoji(
-      "⚡ Developing highly interactive Frontend / User Interfaces for your web and mobile applications"
+      "Developing highly interactive Frontend / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks")
+    emoji("Progressive Web Applications ( PWA ) in normal and SPA Stacks")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
