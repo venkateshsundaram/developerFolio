@@ -37,20 +37,7 @@ export default function Greeting() {
               />
             </div>
           </div>
-          
-          <div className="browser-frame">
-            <div className="browser-header">
-              <div className="dot red"></div>
-              <div className="dot yellow"></div>
-              <div className="dot green"></div>
-            </div>
-            <div className="browser-content">
-              <img
-                src={require("../../assets/images/hero-illustration-3d.jpg")}
-                alt="Professional Illustration"
-              />
-            </div>
-          </div>
+
         </div>
       </div>
     </Fade>
